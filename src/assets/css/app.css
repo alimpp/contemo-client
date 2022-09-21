@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'IRANYekanLight';
+	src: url('../fonts/IRANYekanLight\(FaNum\).ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IRANYekan';
+	src: url('../fonts/IRANYekanRegular\(FaNum\).ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IRANYekanBold';
+	src: url('../fonts/IRANYekanBold\(FaNum\).ttf') format('truetype');
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f6f8fa;
+	overflow-x: hidden;
+	direction: rtl;
+	font-family: 'IRANYekan';
+}
+
+.app-rtl {
+	direction: rtl;
+}
+.app-ltr {
+	direction: ltr;
+}
+.app-pointer {
+	cursor: pointer;
+}
+::-webkit-scrollbar{width: 5px; height: 6px;cursor: pointer;}
+::-webkit-scrollbar-track {border-radius: 5px;background: #fff;}
+::-webkit-scrollbar-thumb {border-radius: 5px;background: #dee1f1;}
+.application-animation{
+	animation: 2s applicationAnimation;
+}
+@keyframes applicationAnimation {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
